@@ -1,0 +1,17 @@
+.bilder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bild {
+    text-align: center;
+}
+
+.bild img {
+    width: 200px;
+}
+
+.bild p {
+    margin-top: 10px;
+}
