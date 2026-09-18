@@ -1,7 +1,7 @@
 body{
+    margin: 0;
     font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
     color: black;
-    text-align: center;
 }
 
 .lead{
@@ -56,21 +56,37 @@ body{
 
 .card{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    background-color: #A8DADC;
+    color: black;
+    width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border-bottom: 10px solid #457b9d;
 }
 
 .card-img {
     width: 200px;
-    height: 200px;
 }
 
-.car-text {
-        width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background: #ddebf8;
-    color: #2b2839;
-    border-bottom: 6px solid #d8cefe;
+.texthover1, .texthover2, .texthover3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    background-color: #1D3557;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    pointer-events: none; /* Prevents the text from blocking hover events */
+}
+
+.bild:hover .texthover1, .bild:hover .texthover2, .bild:hover .texthover3{
+    opacity: 1;
 }
